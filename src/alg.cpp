@@ -22,14 +22,16 @@ uint64_t nPrime(uint64_t n) {
 				return prime;
 		}
 	}
+	return 0;
 }
 
 uint64_t nextprime(uint64_t value) {
-	for (int i = value+1; i < 1000000; i++) {
+	for (int i = value + 1; i < 1000000; i++) {
 		if (checkPrime(i) == 1) {
 			return i;
 		}
 	}
+	return 0;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
